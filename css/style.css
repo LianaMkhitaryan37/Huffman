@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
+*{
+    margin:0;
+    padding: 0;
+}
+.dropdown-menu{
+    background: rgba(255,255,255,0.95)!important;
+    border: unset !important;
+}
+body{
+    font-size:  0.875rem;
+    color: #96a6a7;
+    background-color: #ffff;
+    font-family: 'Asap', sans-serif !important;
+    position: relative;
+}
+.he{
+    background-color: rgb( 222, 222, 222 );
+    background-image: url('../images/bg_H.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar-brand p{
+    font-family: Lato;
+    margin-bottom: 0px;
+}
+.prof{
+    font-size:0.375rem ;
+}
+.nav-link{
+    font-family: 'Asap', sans-serif !important;
+    color:#4d4d4d !important;
+    padding: 0.9375rem 0 0 !important;
+    text-align:left !important; 
+    display: inline-block !important;
+}
+.nav-link:hover{
+    border-bottom: 0.125rem solid #878787 !important;   
+}
+.nav-item{
+    margin-left: 2.375rem ;
+}
+.imgF,.ptext{
+    padding: 0 !important;
+}
+.name{
+
+    font-weight: 500;
+    margin-bottom:  0.625rem;
+    color:#4d4d4d ;
+    font-size:5.625em;
+} 
+.desc{
+    font-size: 1.375rem;
+    font-weight: 500;
+    opacity: 0.541;
+    padding-left:0.375rem;
+    margin-bottom:0.625rem;
+/* margin-bottom: 1.62vw; */
+}
+a:hover{
+    color: unset !important;
+    text-decoration: unset !important;
+}
+.activeB{
+    display: inline-block;
+    background-color: white;
+    color:#4d4d4d;
+    padding: 1.25rem 2rem;
+    font-weight: 500 !important;
+    font-size:1rem;
+    margin-left: 0.375rem;
+    margin-right: 0.875rem;
+    box-shadow: 0px 1.125rem 1.6675rem 0.145rem rgba(0, 0, 0, 0.1); 
+    margin-bottom: 2.5rem
+}
+.hire {
+    font-weight: 500 !important;
+    color:#4d4d4d;
+    padding: 1.1875rem 2.9375rem;
+    font-size:1rem;
+    border: 0.0625rem solid #4d4d4d;
+/* margin-bottom: 2rem; */
+/* display: inline-block; */
+}
+.imgF img{
+    display: block;
+}
+.hr{
+    width:3.75rem;
+    height:0.25rem;
+    background-color: #7a7a7a;
+    margin-bottom:1.1875rem;
+}
+#about{
+    padding:  6.875rem 0 7.8125rem 0 ;
+}
+.hdr{
+    color: #7c7c7c;
+    font-family: Asap;
+    font-size:2.875rem;
+    font-weight: 700;
+    margin-top: 1.25rem;
+    margin-bottom: 0.8125rem;
+}
+.ctext{
+    padding: 0px 0.25rem !important;
+}
+.ctext p{
+    margin-bottom: 2.1875rem;
+    font-family: "Asap";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #4d4d4d;
+}
+.element h2{
+    text-align: center;
+    font: bold 1.5rem Asap;
+    color: #4d4d4d
+}
+.element{
+    width:250px;
+}
+/* .thing{
+    width:220px'
+} */
+.works img{
+    margin:0 0 1.875rem;
+}
+.port{
+    background-color: #f6f6f6;
+    padding: 7.875rem 0;
+}
+button{
+    /* padding: 19px 48px;   */
+    background-color:white; 
+    /* display: block; */
+    border: inherit;
+    width: 11.875rem;
+    height: 3.125rem;
+    /* margin:4vw auto 0 auto; */
+    /* margin-top:4vw; */
+    box-shadow: 0px 1.125rem 1.6675rem 0.145rem rgba(0, 0, 0, 0.1); 
+
+}
+.LOAD{
+    font-family: Asap;
+    font-size:1rem;
+    color:#4d4d4d;
+}
+
+@media screen and (max-width: 576px){
+    .name{
+        font-size:20vw;
+    }
+    .desc{
+        font-size: 5vw;
+    }
+    .active,.hire{
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+    .limar{
+        display: block !important;
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
+    .hdr{
+        font-size:2.2rem;
+    }
+
+}
