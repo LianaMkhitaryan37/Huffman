@@ -1,6 +1,6 @@
 <?php
 include 'header.html';
-
+include 'Hofman.php';
 ?>
 <?php
 
@@ -97,7 +97,7 @@ if (isset($_POST['username'], $_POST['password'])) {
             $stmt->bind_result($id, $fN, $lN, $aG, $eM, $password);
             $stmt->fetch();
 
-            if (password_verify($_POST['password'], $password)) {
+            if (password_verify(huffmannEncode($_POST['password']), $password)) {
                 $_SESSION['loggedin'] = true;
                 $_SESSION['name'] = $_POST['username'];
                     // $_SESSION['lan']      = $lan;

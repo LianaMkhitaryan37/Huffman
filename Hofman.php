@@ -41,5 +41,5 @@ function huffmannEncode($string) {
     }
     return $encoded;
 }
-echo huffmannEncode('hello world');
+//echo huffmannEncode('hello world');
 ?>
