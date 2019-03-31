@@ -46,6 +46,7 @@ include 'header.html';
 
 <?php 
     include 'Hofman.php';
+    include 'encryption.php';
     session_start();
     $conn = mysqli_connect("localhost","root","usbw","multilanguage");
     mysqli_set_charset($conn,'utf8');
@@ -117,7 +118,7 @@ include 'header.html';
             $age = mysqli_real_escape_string($conn, $_POST['age']);
             $email = mysqli_real_escape_string($conn, $_POST['email']);
             $username = mysqli_real_escape_string($conn, $_POST['username']);
-            $password=password_hash(huffmannEncode($_POST['password']), PASSWORD_DEFAULT);
+            $password=addCrc(huffmannEncode(shablon($_POST['password'])));
             if ($stmt = $conn->prepare('INSERT INTO users (FirstName,LastName,age,username, password, Email) VALUES (?, ?, ?,?,?,?)')) {
                 $stmt->bind_param('ssdsss',$firstname,$lastname,$age,$username ,$password , $email);
                 $stmt->execute();
